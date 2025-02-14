@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(245, 246, 247);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    width: 700px;
+}
+
+.form-container {
+    background-color: rgb(245, 246, 247);
+    padding: 40px;
+    border-radius: 0px;
+    box-shadow: #333;
+}
+
+.logo {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.form-subtitle {
+    text-align: left;
+    color: gray;
+}
+
+h2 {
+    text-align: left;
+}
+
+
+.form-group {
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: lighter;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.id-section-group {
+    display: flex;
+    gap: 10px;
+}
+
+.id-section-group input {
+    flex: 1;
+    max-width: 200px;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.name-fields input {
+    max-width: 200px;
+}
+
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+.upload-container {
+    text-align: left;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#campus {
+    max-width: 200px;
+}
+
+
+#file-upload {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.upload-btn {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    width: 50%;
+    transition: background-color 0.2s ease-in-out;
+    margin-bottom: 3%;
+}
+
+.upload-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.submit-btn {
+    background-color: #243ca7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.name-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.campus-computer-group {
+    display: flex;
+    gap: 10px;
+}
+
+.campus-computer-group input {
+    flex: 1;
+    max-width: 200px;
+}
+
+
+#middle-initial {
+    width: 50px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#success-message button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    background: #243ca7;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#success-message button:hover {
+    background: #1a2c87;
+}
+
+
+
+@media (max-width: 600px) {
+    .name-fields {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #middle-initial {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+}
