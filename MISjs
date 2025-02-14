@@ -1,0 +1,8 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("service-ticket-form");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        document.getElementById("success-message").classList.remove("hidden");
+    });
+});
